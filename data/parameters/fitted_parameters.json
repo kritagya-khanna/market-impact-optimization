@@ -1,0 +1,142 @@
+{
+  "stocks": {
+    "CRWV": {
+      "models": {
+        "Linear": {
+          "parameters": {
+            "beta": 6.75780123859937e-07
+          },
+          "performance": {
+            "r2": -0.4621780064659442,
+            "rmse": 0.001685421590870468,
+            "aic": -215.11514450198987
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Square Root": {
+          "parameters": {
+            "alpha": 6.215133476577468e-05
+          },
+          "performance": {
+            "r2": 0.5410666987537038,
+            "rmse": 0.0009442417861734957,
+            "aic": -234.8143620365701
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Power Law": {
+          "parameters": {
+            "alpha": 0.000609986984816881,
+            "beta": 0.2265174849027034
+          },
+          "performance": {
+            "r2": 0.9430395527810335,
+            "rmse": 0.00033265581899473727,
+            "aic": -268.2856740888843
+          },
+          "fitted": true,
+          "valid": "True"
+        }
+      },
+      "best_model": "Power Law",
+      "selection_criteria": {}
+    },
+    "FROG": {
+      "models": {
+        "Linear": {
+          "parameters": {
+            "beta": 7.114296646922147e-07
+          },
+          "performance": {
+            "r2": -0.5237120538303066,
+            "rmse": 0.001795467577122387,
+            "aic": -212.96465327873048
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Square Root": {
+          "parameters": {
+            "alpha": 6.54210486053864e-05
+          },
+          "performance": {
+            "r2": 0.4962684078448456,
+            "rmse": 0.0010323470233585931,
+            "aic": -231.78129378707158
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Power Law": {
+          "parameters": {
+            "alpha": 0.0006671038183804343,
+            "beta": 0.2216466618678121
+          },
+          "performance": {
+            "r2": 0.9116970675130674,
+            "rmse": 0.0004322287775620627,
+            "aic": -259.38288809503734
+          },
+          "fitted": true,
+          "valid": "True"
+        }
+      },
+      "best_model": "Power Law",
+      "selection_criteria": {}
+    },
+    "SOUN": {
+      "models": {
+        "Linear": {
+          "parameters": {
+            "beta": 2.7065245344903843e-07
+          },
+          "performance": {
+            "r2": -0.9312664980823253,
+            "rmse": 0.0006026658988569839,
+            "aic": -250.0810177098532
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Square Root": {
+          "parameters": {
+            "alpha": 2.3543715577202403e-05
+          },
+          "performance": {
+            "r2": 0.09438725186930463,
+            "rmse": 0.00041269269198377577,
+            "aic": -262.955449192116
+          },
+          "fitted": true,
+          "valid": "True"
+        },
+        "Power Law": {
+          "parameters": {
+            "alpha": 0.0003701808653006693,
+            "beta": 0.16423045575559433
+          },
+          "performance": {
+            "r2": 0.7248415858303671,
+            "rmse": 0.0002274819349168059,
+            "aic": -281.206950809299
+          },
+          "fitted": true,
+          "valid": "True"
+        }
+      },
+      "best_model": "Power Law",
+      "selection_criteria": {}
+    }
+  },
+  "metadata": {
+    "extraction_date": "2025-07-31T23:00:00.174946",
+    "source": "notebook_analysis",
+    "model_types": [
+      "Linear",
+      "Square Root",
+      "Power Law"
+    ]
+  }
+}
