@@ -93,7 +93,13 @@ class MarketImpactOptimizer:
             constraints = constraint_builder.build_all_constraints(execution_vars)
             problem = cp.Problem(cp.Minimize(objective), constraints)
             
-            available_solvers = ['SCS', 'OSQP', 'CLARABEL']
+            all_installed = cp.installed_solvers()
+            preferred_solvers = ['OSQP', 'SCS', 'CLARABEL']
+            available_solvers = [s for s in preferred_solvers if s in all_installed]
+            
+            if not available_solvers:
+                available_solvers = all_installed
+                
             if self.solver in available_solvers:
                 solvers_to_try = [self.solver] + [s for s in available_solvers if s != self.solver]
             else:
